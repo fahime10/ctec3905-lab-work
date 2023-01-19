@@ -12,4 +12,4 @@ function change() {
     theButton.textContent = `Clicked ${count} times!`;
 }
 
-document.getElementById(`theButton`).addEventListener("click", change);
+theButton.addEventListener('click', change);
