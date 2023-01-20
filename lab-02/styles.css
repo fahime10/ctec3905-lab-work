@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 15vw;
+    float: right;
+    order: 2;
+}
+
+nav a {
+    background-color: white;
+    color: fuchsia;
+    padding: 0.25em;
+    margin: 1em;
+    text-decoration: wavy;
+    transition: background-color 0.9s;
+    flex-shrink: 0;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+body {
+    margin: 0px;
+}
+
+header, main {
+    background-color: firebrick;
+    overflow: auto;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 85vw;
+    overflow: auto;
+}
+
+p, h1 {
+    margin: 20px;
+}
