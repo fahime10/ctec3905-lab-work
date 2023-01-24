@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" dir="ltr">
+        <title>Lab-05</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+        <header>
+            <section id="search">
+                <input placeholder="&#128269; search" id="myQuery" aria-label="search">
+                <button type="search" id="searchButton">search</button>
+            </section>
+            <h1>User input form</h1>
+        </header>
+        <main>
+            <section data-name="basic input">
+                <h2>Basic input</h2>
+                <label for="myName">Enter your name:</label>
+                <input id="myName">
+            </section>
+            <section data-name="numbers">
+                <h2>Numbers</h2>
+                <label for="myAge">Enter your age: </label>
+                <input id="myAge" type="number" max="150">
+            </section>
+            <section class="relative" data-name="ranges">
+                <h2>Ranges</h2>
+                <label for="myHeight">Element height: </label>
+                <input id="myHeight" type="range" value="50" step="25">
+                <div id="heightTarget"></div>
+            </section>
+            <section id="colours" data-name="colours">
+                <h2>Colours</h2>
+                <label for="myBG">Background: </label>
+                <input id="myBG" type="color" value="#ffffff"><br>
+                <label for="myFG">Foreground: </label>
+                <input id="myFG" type="color" value="#000000">
+            </section>
+            <section data-name="login">
+                <form id="login">
+                    <h2>Sign in</h2>
+                    <label for="myUser">Username: </label>
+                    <input id="myUser" name="username" placeholder="enter your username" required>
+                    <label for="myPassword">Password: </label>
+                    <input id="myPassword" type="password" name="password" placeholder="enter your password" minlength="8" required>
+                    <label for="myConfirmation">Confirm password: </label>
+                    <input id="myConfirmation" type="password" placeholder="confirm your password" required>
+                    <input type="submit" value="login">
+                </form>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
