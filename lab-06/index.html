@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Todo list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <header>
+            <h1>Todo list</h1>
+        </header>
+        <main>
+            <section>
+                <input id="text" placeholder="new todo" aria-label="new todo">
+                <button id="add">add</button>
+            </section>
+            <ul id="todo">
+                <li>
+                    <label for="todo1">Study learning materials</label>
+                    <input type="checkbox" id="todo1">
+                </li>
+                <li>
+                    <label for="todo2">Complete lab exercises</label>
+                    <input type="checkbox" id="todo2">
+                </li>
+                <li>
+                    <label for="todo3">Attend lab sessions</label>
+                    <input type="checkbox" id="todo3">
+                </li>
+                <li>
+                    <label for="todo4">Conduct self-directed research</label>
+                    <input type="checkbox" id="todo4">
+                </li>
+                <li>
+                    <label for="todo5">Ask questions</label>
+                    <input type="checkbox" id="todo5">
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <button id="clear">Clear entire list</button>
+        </footer>
+        <script src="todo.js"></script>
+    </body>
+</html>
