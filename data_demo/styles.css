@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomi&display=swap');
+
+body {
+    font-family: "New Tegomin", sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+main, nav, header {
+    padding: 1rem;
+}
+
+nav {
+    font-size: 1.4rem;
+    background-color: hsl(30, 50%, 50%);
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2em;
+    margin: 0.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 0;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 500px) {
+    article {
+        flex-direction: row;
+    }
+}
